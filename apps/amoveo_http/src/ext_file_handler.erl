@@ -68,6 +68,13 @@ handle(Req, _) ->
                <<"/wallet.html">> -> true;
                <<"/BigInteger.js">> -> true;
                <<"/big_int_test.js">> -> true;
+               
+               <<"/display.js">> -> true;
+               <<"/title2.js">> -> true;
+
+               <<"/stablecoin.html">> -> true;
+               <<"/wallet2.html">> -> true;
+
                X -> 
                    %io:fwrite("ext file handler block access to: "),
                    %io:fwrite(X),
